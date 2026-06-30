@@ -28,7 +28,7 @@ app = Flask(__name__)
 BUILDFLOW_URL = "https://buildflow.com.br"
 LOGIN_USER = "henrique.melo"
 LOGIN_PASS = "Hschetz@!2026"
-EMAIL_DESTINATARIO = "henrique.schetz@gmail.com"
+EMAIL_DESTINATARIO = "henrique.melo@nvrempreendimentos.com.br"
 EMAIL_REMETENTE = os.getenv('EMAIL_REMETENTE', 'seu_email@gmail.com')
 EMAIL_SENHA = os.getenv('EMAIL_SENHA', 'sua_senha_app')
 
