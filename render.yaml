@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: buildflow-webhook
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python buildflow_webhook.py
+    autoDeploy: true
+    envVars:
+      - key: EMAIL_REMETENTE
+        scope: build,runtime
+      - key: EMAIL_SENHA
+        scope: build,runtime
+      - key: PORT
+        value: 5000
